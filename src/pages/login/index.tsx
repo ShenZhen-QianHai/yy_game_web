@@ -7,7 +7,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 
 function About() {
     return (
-        <div className="">
+        <div className={`${logincss.box}`}>
             <img className={`${logincss.logo}`} src={logo} alt="" />
             <div className={`${logincss.main}`}>
                 <div className={`${logincss.main_left}`}> 

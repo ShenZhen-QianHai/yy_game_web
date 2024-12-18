@@ -1,8 +1,13 @@
+
+.box{
+    min-height: calc(100vh);
+    background: #0000008c; 
+}
 .logo{
     width: 180px;
     height: 149px;
     display: block;
-    margin: 60px auto; 
+    padding: 60px auto; 
 } 
 .main{
     width: 1200px;
