@@ -4,16 +4,97 @@
     display: block;
     margin: 60px auto; 
 } 
-.main{}
-.main_left{}
-.main_left_img{}
-.main_right{}
-.main_right_title{}
-.main_right_from{}
-.main_right_from_item{}
-.main_right_from_label{}
-.main_right_from_input{}
-.main_right_from_submit{}
-.main_right_from_footer{}
-.main_right_from_footer_1{}
-.main_right_from_footer_2{} 
+.main{
+    width: 1200px;
+    height: 540px;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    background: rgba(23, 29, 46, 1);
+}
+.main_left{
+    width: 400px; 
+    margin: 0 50px;
+    background: rgba(23, 29, 46, 1);
+}
+.main_left_img{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto
+}
+.main_left_Swiper{ 
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.main_right{
+    flex: 1;
+}
+.main_right_title{
+    color: #fff;
+    font-size: 32px;
+    padding-top: 20px;
+    font-weight: 900;
+    text-align: center;
+    padding: 60px 0px 40px 0px;
+}
+.main_right_from{
+    padding-right: 60px;
+}
+.main_right_from_item{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.main_right_from_label{
+    width: 124px;
+    color: #fff;
+    font-size: 24px; 
+    font-weight: 500;
+}
+.main_right_from_label span{
+    color: red;
+}    
+.main_right_from_input{
+    flex: 1;
+    height: 60px;
+    color: #fff;
+    font-size: 20px; 
+    border-radius: 5px;
+    background: rgba(22, 27, 36, 1);
+    padding: 0px 10px;
+    border: 1px solid rgba(195, 207, 255, 1);
+}
+.main_right_from_submit{
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px; 
+    border-radius: 5px;
+    margin-left: 124px;
+    background: rgba(0, 111, 255, 1); 
+}
+.main_right_from_footer{
+    width: 400px;
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+}
+.main_right_from_footer_1{
+    flex: 1;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    font-size: 16px; }
+.main_right_from_footer_2{
+    flex: 1;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    font-size: 16px; } 
+.footer{
+    height: 100px;
+}

@@ -1,8 +1,9 @@
 import React from 'react'
 import logincss from './index.module.css';
 import logo from "../../images/logo.png"
+import icon2 from "../../images/icon2.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 function About() {
     return (
@@ -10,13 +11,13 @@ function About() {
             <img className={`${logincss.logo}`} src={logo} alt="" />
             <div className={`${logincss.main}`}>
                 <div className={`${logincss.main_left}`}> 
-                    <Swiper spaceBetween={0} slidesPerView={1} modules={[Pagination]} pagination={true} className="">
+                    <Swiper loop autoplay={{ delay: 2000 }} spaceBetween={0} slidesPerView={1} modules={[Pagination, Autoplay]} pagination={true} className={`${logincss.main_left_Swiper}`}>
                         {[1, 2, 3].map((item: any, index: number) => (
                             <SwiperSlide key={index}>
                                 <img
                                     onClick={() => {
                                     }}
-                                    src={logo}
+                                    src={icon2}
                                     alt=""
                                     className={`${logincss.main_left_img}`}
                                 />
@@ -46,6 +47,7 @@ function About() {
                     </div>
                 </div>
             </div>
+            <div className={`${logincss.footer}`}></div>
         </div>
     )
 }
