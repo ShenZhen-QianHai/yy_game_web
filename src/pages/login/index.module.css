@@ -2,11 +2,13 @@
 .box{
     min-height: calc(100vh);
     background: #0000008c; 
+    padding-top: 35px;
 }
 .logo{
     width: 180px;
     height: 149px;
     display: block;
+    margin: 0 auto 35px auto ;
     padding: 60px auto; 
 } 
 .main{
@@ -102,4 +104,16 @@
     font-size: 16px; } 
 .footer{
     height: 100px;
+}
+@media (max-width: 768px) {
+    .main{
+        width: 90%; 
+        display: block;
+        margin: 0 auto;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px; 
+    }
+    .main_left{
+        display: none;
+    }
 }
