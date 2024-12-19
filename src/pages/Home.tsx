@@ -9,6 +9,10 @@ import icon7 from "../images/icon7.png";
 import icon10 from "../images/icon10.png";
 import icon11 from "../images/icon11.png";
 import icon12 from "../images/icon12.png";
+import icon14 from "../images/icon14.png";
+import icon15 from "../images/icon15.png";
+import icon16 from "../images/icon16.png";
+import icon17 from "../images/icon17.png";
 import close from "../images/close.png";
 import { Modal, Select, Tooltip } from "antd";
 
@@ -46,7 +50,9 @@ function Home() {
     setOpen(false);
   };
 
-  const [open2, setOpen2] = useState(true);
+  const [open2, setOpen2] = useState(false);
+
+  const [isShowMaximum, setIsShowMaximum] = useState(false);
 
   return (
     <div className="Home">
@@ -250,7 +256,12 @@ function Home() {
             1 YI Coin=100 XI Coin
           </div>
           <div className="Home_Proceed_select">
-            <div className="Home_Proceed_select_item">
+            <div
+              className="Home_Proceed_select_item"
+              onClick={() => {
+                setIsShowMaximum(!isShowMaximum);
+              }}
+            >
               Maximum Transfer Amount
               <Tooltip title="说明说明说明说明说明说明说明说明说明说明说明说明说明">
                 <img
@@ -267,13 +278,127 @@ function Home() {
               />
               <div className="Home_Proceed_select_label_name">348 ($329)</div>
               <img
-                src={icon4}
+                src={isShowMaximum ? icon15 : icon4}
                 alt=""
                 className="Home_Proceed_select_label_arr"
               />
             </div>
+            <div
+              className="Home_Proceed_select_box"
+              style={{ display: isShowMaximum ? "block" : "none" }}
+            >
+              <div className="Home_Proceed_select_box_1">
+                <div className="Home_Proceed_select_box_1_lab">Swap Route</div>
+                <img
+                  src={icon6}
+                  alt=""
+                  className="Home_Proceed_select_box_1_1"
+                />
+                <img
+                  src={icon16}
+                  alt=""
+                  className="Home_Proceed_select_box_1_2"
+                />
+                <img
+                  src={icon7}
+                  alt=""
+                  className="Home_Proceed_select_box_1_3"
+                />
+              </div>
+              <div className="Home_Proceed_select_box_1">
+                <div className="Home_Proceed_select_box_1_lab">
+                  Swap Fee (Minimum)
+                </div>
+              </div>
+              <div className="Home_Proceed_select_box_2">
+                <img
+                  src={icon14}
+                  alt=""
+                  className="Home_Proceed_select_box_2_1"
+                />
+                <div className="Home_Proceed_select_box_1_lab">
+                  Swap Fee (Minimum)
+                </div>
+                <img
+                  src={icon6}
+                  alt=""
+                  className="Home_Proceed_select_box_2_2"
+                />
+                <div className="Home_Proceed_select_box_2_right">
+                  <h4>348</h4>
+                  <h5>($0.238)</h5>
+                </div>
+              </div>
+              <div className="Home_Proceed_select_box_2">
+                <img
+                  src={icon14}
+                  alt=""
+                  className="Home_Proceed_select_box_2_1"
+                />
+                <div className="Home_Proceed_select_box_1_lab">
+                  Swap Fee (Minimum)
+                </div>
+                <img
+                  src={icon6}
+                  alt=""
+                  className="Home_Proceed_select_box_2_2"
+                />
+                <div className="Home_Proceed_select_box_2_right">
+                  <h4>348</h4>
+                  <h5>($0.238)</h5>
+                </div>
+              </div>
+              <div className="Home_Proceed_select_box_3">
+                <div className="Home_Proceed_select_box_3_lab">
+                  Swap Fee (Minimum)
+                </div>
+
+                <Tooltip title="说明说明说明说明说明说明说明说明说明说明说明说明说明">
+                  <img
+                    src={icon17}
+                    alt=""
+                    className="Home_Proceed_select_box_3_img"
+                  />
+                </Tooltip>
+                <div className="Home_Proceed_select_box_3_right">0.5%</div>
+              </div>
+              <div className="Home_Proceed_select_box_3">
+                <div className="Home_Proceed_select_box_3_lab">
+                  Swap Fee (Minimum)
+                </div>
+                <Tooltip title="说明说明说明说明说明说明说明说明说明说明说明说明说明">
+                  <img
+                    src={icon17}
+                    alt=""
+                    className="Home_Proceed_select_box_3_img"
+                  />
+                </Tooltip>
+                <div className="Home_Proceed_select_box_3_right">
+                  0.5%
+                  <span>(0.2%)</span>
+                </div>
+              </div>
+              <div className="Home_Proceed_select_box_4">
+                <div className="Home_Proceed_select_box_4_left"></div>
+                <div className="Home_Proceed_select_box_4_right">
+                  <Tooltip title="说明说明说明说明说明说明说明说明说明说明说明说明说明">
+                    <img
+                      src={icon17}
+                      alt=""
+                      className="Home_Proceed_select_box_4_img"
+                    />
+                  </Tooltip>
+                  Average Tradability
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="Home_switching_submit" onClick={() => {}}>
+          <div
+            className="Home_switching_submit"
+            onClick={() => {
+              setOpen2(false);
+            }}
+          >
             Swap
           </div>
         </div>
