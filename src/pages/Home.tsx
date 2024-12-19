@@ -13,6 +13,7 @@ import icon14 from "../images/icon14.png";
 import icon15 from "../images/icon15.png";
 import icon16 from "../images/icon16.png";
 import icon17 from "../images/icon17.png";
+import icon18 from "../images/icon18.png";
 import close from "../images/close.png";
 import { Modal, Select, Tooltip } from "antd";
 
@@ -57,80 +58,123 @@ function Home() {
 
   return (
     <div className="Home">
-      <div className="Home_box">
-        <div className="Home_tab">
-          <div
-            className={
-              tabIndex === 1
-                ? "Home_tab_item Home_tab_item_on"
-                : "Home_tab_item"
-            }
-            onClick={() => setTabIndex(1)}
-          >
-            Current account
+      {/* h5端 */}
+      <div className=" Home-h5">
+        <div className="Home_box">
+          <div className="Home_tab">
+            <div
+              className={
+                tabIndex === 1
+                  ? "Home_tab_item Home_tab_item_on"
+                  : "Home_tab_item"
+              }
+              onClick={() => setTabIndex(1)}
+            >
+              Current account
+            </div>
+            <div
+              className={
+                tabIndex === 2
+                  ? "Home_tab_item Home_tab_item_on"
+                  : "Home_tab_item"
+              }
+              onClick={() => setTabIndex(2)}
+            >
+              Owns Yigame assets
+            </div>
           </div>
-          <div
-            className={
-              tabIndex === 2
-                ? "Home_tab_item Home_tab_item_on"
-                : "Home_tab_item"
-            }
-            onClick={() => setTabIndex(2)}
-          >
-            Owns Yigame assets
+          <div className="Home_info">
+            <div className="Home_info_left">
+              <div className="Home_info_left_item Home_info_left_item_1">
+                <h5>Personal W : </h5>
+                <p>321452145459304</p>
+              </div>
+              <div className="Home_info_left_item">
+                <h5>Personal W : </h5>
+                <p>321452145459304</p>
+              </div>
+            </div>
+            <div className="Home_info_right">  
+              <div className="Home_info_right_box"> 
+                <div className="Home_info_right_item">
+                  <div className="Home_info_right_item_1">rqjwiou21uio</div>
+                  <div className="Home_info_right_item_2">YiGame</div>
+                </div>
+                <div className="Home_info_right_item">
+                  <div className="Home_info_right_item_1">Indonesia</div>
+                  <div className="Home_info_right_item_2">[area]</div>
+                </div>
+                <div className="Home_info_right_item">
+                  <div className="Home_info_right_item_1">Region 2</div>
+                  <div className="Home_info_right_item_2">[Zone]</div>
+                </div>
+                <div className="Home_info_right_item"> 
+                  <div className="Home_info_right_item_2">[ Click to  Change  ]</div>
+                </div>
+              </div>
+              <div className="Home_info_right_item2">
+                Toggle
+                <img src={icon18} alt=""  />
+              </div>
+            </div>
+          </div>
+          <div className="Home_info2">
+            Exchange
           </div>
         </div>
-        <div className="" style={{ display: "none" }}>
-          <div className="Home_tab2">
-            <div className="Home_tab2_item">Personal wallet：3479357948594</div>
-            <img className="Home_tab2_copy" src={iconCopy} alt="" />
-            <div className="Home_tab2_line"></div>
-            <div className="Home_tab2_item2">Wallet account：3479357948594</div>
-            <img className="Home_tab2_copy" src={iconCopy} alt="" />
-            <div className="Home_tab2_item3" onClick={() => setOpen(true)}>
-              Indonesia Region 2<span>【539583984】</span>
+      </div>
+
+      {/* pc端 */}
+      <div className="Home-pc">
+        <div className="Home_tab2">
+          <div className="Home_tab2_item">Personal wallet：3479357948594</div>
+          <img className="Home_tab2_copy" src={iconCopy} alt="" />
+          <div className="Home_tab2_line"></div>
+          <div className="Home_tab2_item2">Wallet account：3479357948594</div>
+          <img className="Home_tab2_copy" src={iconCopy} alt="" />
+          <div className="Home_tab2_item3" onClick={() => setOpen(true)}>
+            Indonesia Region 2<span>【539583984】</span>
+          </div>
+        </div>
+        <div className="Home_main">
+          <div className="Home_main_bg">
+            <div className="Home_main_bg_1">2024-12-31 13:21:32</div>
+            <div className="Home_main_bg_2">Extraction</div>
+            <div className="Home_main_bg_3">2024-12-31 13:21:32</div>
+            <div className="Home_main_bg_4">Currency exchange</div>
+            <div className="Home_main_bg_5">click to connect</div>
+            <div className="Home_main_bg_6">Wallet</div>
+            <div className="Home_main_bg_7">
+              <img src={icon6} alt="" />
+              5000
+            </div>
+            <div className="Home_main_bg_8">
+              <img src={icon7} alt="" />
+              5000
             </div>
           </div>
-          <div className="Home_main">
-            <div className="Home_main_bg">
-              <div className="Home_main_bg_1">2024-12-31 13:21:32</div>
-              <div className="Home_main_bg_2">Extraction</div>
-              <div className="Home_main_bg_3">2024-12-31 13:21:32</div>
-              <div className="Home_main_bg_4">Currency exchange</div>
-              <div className="Home_main_bg_5">click to connect</div>
-              <div className="Home_main_bg_6">Wallet</div>
-              <div className="Home_main_bg_7">
-                <img src={icon6} alt="" />
-                5000
-              </div>
-              <div className="Home_main_bg_8">
-                <img src={icon7} alt="" />
-                5000
-              </div>
-            </div>
-            <div className="Home_main_h1">About All</div>
-            <div className="Home_main_h2">
-              About token recharge:
-              <span>
-                The game recharge needs to be prepaid to the game wallet in
-                advance before it can be converted to the in-game ingots.
-              </span>
-            </div>
-            <div className="Home_main_h2">
-              About Token withdrawal:
-              <span>
-                In-game coins can be withdrawn as tokens, but each withdrawal
-                operation needs to be 14 days (336 hours) from the last
-                redemption time.
-              </span>
-            </div>
-            <div className="Home_main_h2">
-              About Game coins Redemption:
-              <span>
-                Top-up coins are non-universal game currency and are redeemed
-                and sent to bound characters.
-              </span>
-            </div>
+          <div className="Home_main_h1">About All</div>
+          <div className="Home_main_h2">
+            About token recharge:
+            <span>
+              The game recharge needs to be prepaid to the game wallet in
+              advance before it can be converted to the in-game ingots.
+            </span>
+          </div>
+          <div className="Home_main_h2">
+            About Token withdrawal:
+            <span>
+              In-game coins can be withdrawn as tokens, but each withdrawal
+              operation needs to be 14 days (336 hours) from the last redemption
+              time.
+            </span>
+          </div>
+          <div className="Home_main_h2">
+            About Game coins Redemption:
+            <span>
+              Top-up coins are non-universal game currency and are redeemed and
+              sent to bound characters.
+            </span>
           </div>
         </div>
       </div>
