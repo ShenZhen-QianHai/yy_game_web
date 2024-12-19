@@ -5,6 +5,9 @@ import { Login } from '../API'
 import iconCopy from '../images/copy.png'
 import icon6 from '../images/icon6.png'
 import icon7 from '../images/icon7.png'
+import close from '../images/close.png'
+import { Modal, Select } from 'antd'
+
 
 function Home() { 
 
@@ -37,9 +40,14 @@ function Home() {
     handleLoad()
   }, [])
 
+  const [open, setOpen] = useState(false);
+  const handleConfirm = () => { 
+    setOpen(false)
+  }
+
   return (
     <div className="Home">
-      <div className="Home_box">
+      <div className="Home_box"> 
         <div className="Home_tab">
           <div className="Home_tab_item Home_tab_item_on">Current account</div>
           <div className="Home_tab_item">Owns Yigame assets</div>
@@ -50,7 +58,7 @@ function Home() {
           <div className="Home_tab2_line"></div>
           <div className="Home_tab2_item2">Wallet account：3479357948594</div>
           <img className="Home_tab2_copy" src={iconCopy} alt="" /> 
-          <div className="Home_tab2_item3">
+          <div className="Home_tab2_item3" onClick={() => setOpen(true)}>
             Indonesia Region 2
             <span>【539583984】</span>
           </div>
@@ -87,6 +95,94 @@ function Home() {
           </div>
         </div>
       </div> 
+      
+      <Modal
+        width={520}
+        open={open}
+        centered={true}
+        onCancel={() => {
+          setOpen(false);
+        }}
+        closable={false}
+        footer={null}
+        title={null}
+        style={{  
+          paddingBottom: "0px",
+        }}
+        destroyOnClose={true}
+      >
+        <div className="Home_switching">
+              <div className="Home_switching_title">
+                Switching region
+                <img src={close} alt="" onClick={()=>{}}/> 
+              </div>
+              <div className="Home_switching_tips">
+                <h6>Currently bound to the game hall and character</h6>
+                <p>
+                  <span className="Home_switching_p_1"></span>
+                  <span className="Home_switching_p_2">Current area：</span>
+                  <span className="Home_switching_p_3">Indonesia</span>
+                </p>
+                <p>
+                  <span className="Home_switching_p_1"></span>
+                  <span className="Home_switching_p_2">Current game suit：</span>
+                  <span className="Home_switching_p_3">Zone 2</span>
+                </p>
+                <p>
+                  <span className="Home_switching_p_1"></span>
+                  <span className="Home_switching_p_2">Role Name：</span>
+                  <span className="Home_switching_p_3">349893859fsjf</span>
+                </p>
+              </div>
+              <div> 
+                <div className="Home_switching_title2">
+                  <span></span>Change to
+                </div>
+                <div className="Home_switching_title3">
+                  Change area
+                </div>
+                <div className="Home_switching_select">
+                  <Select
+                    defaultValue="lucy"
+                    style={{ width: '100%',  color: '#fff' }}
+                    onChange={(e: any) => {console.log(e);
+                    }}
+                    options={[
+                      { value: 'jack', label: 'Jack' },
+                      { value: 'lucy', label: 'Lucy' },
+                      { value: 'Yiminghe', label: 'yiminghe' },
+                      { value: 'disabled', label: 'Disabled', disabled: true },
+                    ]}
+                  />
+                </div>
+                <div className="Home_switching_title3">
+                  Change of suit
+                </div>
+                <div className="Home_switching_select">
+                  <Select
+                    defaultValue="lucy"
+                    style={{ width: '100%',  color: '#fff' }}
+                    onChange={(e: any) => {console.log(e);
+                    }}
+                    options={[
+                      { value: 'jack', label: 'Jack' },
+                      { value: 'lucy', label: 'Lucy' },
+                      { value: 'Yiminghe', label: 'yiminghe' },
+                      { value: 'disabled', label: 'Disabled', disabled: true },
+                    ]}
+                  />
+                </div>
+                <div className="Home_switching_title3">
+                Role Name
+                </div>
+                <div className="Home_switching_select Home_switching_select2">
+                  <input type="text" placeholder="Please enter" />
+                  0/200
+                </div>
+              </div>
+              <div className="Home_switching_submit" onClick={handleConfirm}>Confirm binding</div>
+        </div> 
+      </Modal>
       <br />
       <br />
       <br />
