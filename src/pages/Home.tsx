@@ -14,6 +14,10 @@ import icon15 from "../images/icon15.png";
 import icon16 from "../images/icon16.png";
 import icon17 from "../images/icon17.png";
 import icon18 from "../images/icon18.png";
+import icon19 from "../images/icon19.png";
+import icon20 from "../images/icon20.png";
+import icon21 from "../images/icon21.png";
+import icon24 from "../images/icon24.png";
 import close from "../images/close.png";
 import { Modal, Select, Tooltip } from "antd";
 
@@ -112,7 +116,7 @@ function Home() {
                   <div className="Home_info_right_item_2">[ Click to  Change  ]</div>
                 </div>
               </div>
-              <div className="Home_info_right_item2">
+              <div className="Home_info_right_item2" onClick={() => setOpen(true)}>
                 Toggle
                 <img src={icon18} alt=""  />
               </div>
@@ -120,6 +124,60 @@ function Home() {
           </div>
           <div className="Home_info2">
             Exchange
+          </div>
+          <div className="Home_info3">
+            <div className="Home_info3_item">
+              <div className="Home_info3_item_1">
+                <img src={icon24} alt="" />
+                <div className="">Click to connect</div>
+              </div>
+              <img src={icon20} className="Home_info3_item_0" alt="" />
+              <div className="Home_info3_item_2">
+                <div className="Home_info3_item_2_1">
+                  <img src={icon6} className="Home_info3_item_2_1_img" alt="" />
+                  5000
+                </div>
+                <img src={icon6} className="Home_info3_item_2_img" alt="" /> 
+              </div>
+            </div>
+          </div>
+          <div className="Home_info4">
+            <div className="Home_info4_item">
+              <div className="Home_info4_item_1">
+                <div className="Home_info4_item_1_1">
+                  <img src={icon6} className="Home_info4_item_1_1_img" alt="" />
+                  5000
+                </div>
+                <img src={icon6} className="Home_info4_item_1_2" alt="" />
+                <div className="Home_info4_item_1_3"
+            onClick={() => {
+              setOpen2(true);
+            }}>Top up to Token 2</div>
+              </div>
+              <div className="Home_info4_item_1 Home_info4_item_1_0">
+                <div className="Home_info4_item_1_1">
+                  <img src={icon6} className="Home_info4_item_1_1_img" alt="" />
+                  5000
+                </div>
+                <img src={icon6} className="Home_info4_item_1_2" alt="" />
+                <div className="Home_info4_item_1_3 Home_info4_item_1_3_0"
+            onClick={() => {
+              setOpen2(true);
+            }}>Currency exchange</div>
+                <div className="Home_info4_item_1_4">2024-12-31 13:21:32</div>
+              </div>
+            </div>
+          </div>
+          <div className="Home_info5">
+            <div className="Home_info5_left">
+                  <img src={icon6} className="Home_info5_left_img" alt="" />
+            </div>
+            <img src={icon19} className="Home_info5_arr" alt="" />
+            <div className="Home_info5_right">
+              <img src={icon21} className="Home_info5_right_arr" alt="" />
+              <div className="Home_info5_right_1">Extraction</div>
+              <p>Need to wait： 13:21:32</p>
+            </div> 
           </div>
         </div>
       </div>
