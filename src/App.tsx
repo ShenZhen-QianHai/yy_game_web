@@ -1,18 +1,17 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom' 
-import './App.css'
-import 'swiper/css';
-import 'swiper/css/pagination';
-import PcTop from "./pages/component/pcTop"
+import React from "react";
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import PcTop from "./pages/component/pcTop";
 
-function App() { 
-
+function App() {
   return (
-    <main className="App"> 
+    <main className="App">
       <PcTop />
-      <Outlet /> 
+      <Outlet />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
