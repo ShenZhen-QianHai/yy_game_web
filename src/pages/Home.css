@@ -580,3 +580,23 @@
   height: 22px;
   margin-right: 10px;
 }
+
+@media (max-width: 768px) {
+  .Home {
+    width: 100%;
+  }
+  .Home_box {
+    border-image: none;
+    background: none;
+    padding: 0px;
+    border: none;
+  }
+  .Home_tab {
+    height: auto;
+    padding: 10px 18px;
+  }
+  .Home_tab_item {
+    line-height: 30px;
+    font-size: 14px;
+  }
+}
