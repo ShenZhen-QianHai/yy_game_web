@@ -3,10 +3,14 @@ import { useNavigate } from 'react-router'
 import './Home.css'
 import { Login } from '../API' 
 import iconCopy from '../images/copy.png'
-import icon6 from '../images/icon6.png'
+import icon4 from '../images/icon13.png' 
+import icon6 from '../images/icon6.png' 
 import icon7 from '../images/icon7.png'
+import icon10 from '../images/icon10.png'
+import icon11 from '../images/icon11.png'
+import icon12 from '../images/icon12.png'
 import close from '../images/close.png'
-import { Modal, Select } from 'antd'
+import { Modal, Select, Tooltip } from 'antd'
 
 
 function Home() { 
@@ -44,6 +48,8 @@ function Home() {
   const handleConfirm = () => { 
     setOpen(false)
   }
+ 
+  const [open2, setOpen2] = useState(true);
 
   return (
     <div className="Home">
@@ -96,6 +102,7 @@ function Home() {
         </div>
       </div> 
       
+      {/* Switching region弹框 */}
       <Modal
         width={520}
         open={open}
@@ -181,6 +188,62 @@ function Home() {
                 </div>
               </div>
               <div className="Home_switching_submit" onClick={handleConfirm}>Confirm binding</div>
+        </div> 
+      </Modal>
+      {/* Proceed with swap弹框 */}
+      <Modal
+        width={1000}
+        open={open2}
+        centered={true}
+        onCancel={() => {
+          setOpen2(false);
+        }}
+        closable={false}
+        footer={null}
+        title={null}
+        style={{  
+          paddingBottom: "0px",
+        }}
+        destroyOnClose={true}
+      >
+        <div className="Home_Proceed">
+              <div className="Home_Proceed_title">
+                Proceed with swap
+                <img src={close} className='Home_Proceed_img' alt="" onClick={()=>{}}/> 
+                <img src={icon10} className='Home_Proceed_icon' alt="" onClick={()=>{}}/> 
+              </div> 
+              <div className="Home_Proceed_tips">Proceeding to swap with the following details</div>
+              <div className='Home_Proceed_box'>
+                <div className="Home_Proceed_box_item">
+                  <img src={icon6} alt="" />
+                  YI Coin
+                  <input type="text" />
+                </div>
+                <div className="Home_Proceed_box_line">
+                  <div className="Home_Proceed_box_line_1"></div>
+                  <img src={icon11} alt="" />
+                  <div className="Home_Proceed_box_line_1"></div>
+                </div>
+                <div className="Home_Proceed_box_item">
+                  <img src={icon7} alt="" />
+                  XI Coin
+                  <input type="text" />
+                </div>
+              </div>
+              <div className="Home_Proceed_box_item_text">1 YI Coin=100 XI Coin</div>
+              <div className="Home_Proceed_select">
+                <div className="Home_Proceed_select_item">
+                  Maximum Transfer Amount 
+                  <Tooltip title="说明说明说明说明说明说明说明说明说明说明说明说明说明">
+                    <img src={icon12} alt="" className='Home_Proceed_select_label_iis' />
+                  </Tooltip>
+                  <div className="Home_Proceed_select_label_flex"></div>
+                  <img src={icon6} alt="" className='Home_Proceed_select_label_coin' />
+                  <div className="Home_Proceed_select_label_name">348 ($329)</div> 
+                  <img src={icon4} alt="" className='Home_Proceed_select_label_arr' />
+                </div>
+              </div>
+              <div className="Home_switching_submit" onClick={() => {}}>Swap</div>
         </div> 
       </Modal>
       <br />
