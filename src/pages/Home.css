@@ -19,6 +19,7 @@
 }
 .Home_tab {
   display: flex;
+  flex-wrap: wrap;
   height: 80px;
   opacity: 1;
   border-radius: 10px;
@@ -607,7 +608,7 @@
   }
   .Home_tab {
     height: auto;
-    padding: 20px 18px 0px 18px;
+    padding: 20px 8px 0px 18px;
     background: none;
   }
   .Home_tab_item {
@@ -617,7 +618,7 @@
     background: #fbf5f52e;
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
-  .Home_tab_item:first-child {
+                .Home_tab_item {
     margin-right: 10px;
   }
   .Home_tab_item_on {

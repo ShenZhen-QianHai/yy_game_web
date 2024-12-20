@@ -184,6 +184,28 @@ function Home() {
 
       {/* pc端 */}
       <div className="Home-pc">
+        <div className="Home_tab">
+          <div
+            className={
+              tabIndex === 1
+                ? "Home_tab_item Home_tab_item_on"
+                : "Home_tab_item"
+            }
+            onClick={() => setTabIndex(1)}
+          >
+            Current account
+          </div>
+          <div
+            className={
+              tabIndex === 2
+                ? "Home_tab_item Home_tab_item_on"
+                : "Home_tab_item"
+            }
+            onClick={() => setTabIndex(2)}
+          >
+            Owns Yigame assets
+          </div>
+        </div>
         <div className="Home_tab2">
           <div className="Home_tab2_item">Personal wallet：3479357948594</div>
           <img className="Home_tab2_copy" src={iconCopy} alt="" />
