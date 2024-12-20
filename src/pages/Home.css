@@ -945,8 +945,9 @@
     right: 50px;
   }
   .Home_Proceed_tips {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 20px;
+    font-weight: 500;
     padding: 14px 10px 20px 10px;
   }
   .Home_Proceed_box {

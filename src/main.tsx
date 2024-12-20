@@ -6,6 +6,7 @@ import App from './App'
 import Home from './pages/Home'
 import Login from './pages/login'
 import About from './pages/About'
+import AssetWorld from './pages/assetWorld'
 import Hi from './pages/hi/[name]'
 
 createRoot(document.getElementById('app')!).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById('app')!).render(
         <Route index element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
+        <Route path="/assetWorld" element={<AssetWorld />} />
         <Route path="/hi">
           <Route path=":name" element={<Hi />} />
         </Route>
