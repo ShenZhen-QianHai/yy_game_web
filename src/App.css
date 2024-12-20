@@ -32,10 +32,13 @@ button {
 }
 
 @media (max-width: 768px) {
-  .App{
+  .App {
     padding-top: 66px;
   }
-  body{
+  body {
     background: #080808 !important;
+  }
+  .ant-select-selector {
+    height: 40px !important;
   }
 }
