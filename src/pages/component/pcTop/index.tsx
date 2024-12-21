@@ -37,7 +37,7 @@ function About() {
             </div>
         </div>
         <div className={`${pctop.header_login}`}>
-            <div className={`${pctop.header_login_item1}`}>Sign in</div>
+        <div className={`${pctop.header_login_item1}`} onClick={() => navigate('/airdrop')}>Sign in</div>
             <div className={`${pctop.header_login_item2}`} onClick={() => navigate('/login')}>Log in</div>
             {/* 已登陆 */}
             {/* <div className={`${pctop.header_login_item2}`}>0xndjs...iioj</div> */}

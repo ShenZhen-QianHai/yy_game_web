@@ -6,6 +6,7 @@ import App from './App'
 import Home from './pages/Home'
 import Login from './pages/login'
 import About from './pages/About'
+import Airdrop from './pages/airdrop'
 import AssetWorld from './pages/assetWorld'
 import Hi from './pages/hi/[name]'
 
@@ -17,6 +18,7 @@ createRoot(document.getElementById('app')!).render(
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
         <Route path="/Asset" element={<AssetWorld />} />
+        <Route path="/airdrop" element={<Airdrop />} />
         <Route path="/hi">
           <Route path=":name" element={<Hi />} />
         </Route>
