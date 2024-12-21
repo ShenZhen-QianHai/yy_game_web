@@ -73,7 +73,9 @@
     align-items: end;
     margin-top: 30px;
   }
-  
+  .main_tab_left{
+    display: flex;
+  }
   .main_tab_item {
     display: flex;
     justify-content: center;
