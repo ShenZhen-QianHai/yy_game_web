@@ -188,4 +188,7 @@
     background: none;
     padding: 10px 0px 0px 0px;
   }
+  .footer {
+    height: 0px
+  }
 }

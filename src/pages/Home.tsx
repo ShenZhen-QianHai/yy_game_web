@@ -20,6 +20,7 @@ import icon21 from "../images/icon21.png";
 import icon24 from "../images/icon24.png";
 import close from "../images/close.png";
 import { Modal, Select, Tooltip } from "antd";
+import H5Footer from "./component/h5Footer";
 
 function Home() {
   const router = useNavigate();
@@ -258,6 +259,8 @@ function Home() {
           </div>
         </div>
       </div>
+
+      <H5Footer tabIndex={1} />
 
       {/* Switching region弹框 */}
       <Modal

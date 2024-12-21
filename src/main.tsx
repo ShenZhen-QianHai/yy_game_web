@@ -16,7 +16,7 @@ createRoot(document.getElementById('app')!).render(
         <Route index element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
-        <Route path="/assetWorld" element={<AssetWorld />} />
+        <Route path="/Asset" element={<AssetWorld />} />
         <Route path="/hi">
           <Route path=":name" element={<Hi />} />
         </Route>

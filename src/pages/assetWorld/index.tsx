@@ -12,6 +12,7 @@ import icon31 from "../../images/icon31.png";
 import icon6 from "../../images/icon6.png";
 import { Dropdown, Modal } from "antd";
 import { useNavigate } from "react-router-dom";
+import H5Footer from "../component/h5Footer"
 
 function About() {
   const navigate = useNavigate();
@@ -444,6 +445,7 @@ function About() {
       </Modal>
 
       <div className={`${logincss.footer}`}></div>
+      <H5Footer tabIndex={3} />
     </div>
   );
 }

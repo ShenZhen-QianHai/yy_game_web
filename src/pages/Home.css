@@ -603,7 +603,7 @@
   .Home_box {
     border-image: none;
     background: none;
-    padding: 0px;
+    padding: 0px 0px 80px 0px;
     border: none;
   }
   .Home_tab {

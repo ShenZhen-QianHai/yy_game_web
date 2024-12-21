@@ -2,14 +2,17 @@ import React from "react";
 import pctop from "./index.module.css";
 import logo from "../../../images/logo.png";
 import icon1 from "../../../images/icon1.png";
+import { useNavigate } from "react-router";
 
 function About() {
+  const navigate = useNavigate();
+
   return (
     <div className={`${pctop.header}`}>
-      <img className={`${pctop.header_logo}`} src={logo} alt="" />
+      <img className={`${pctop.header_logo}`} onClick={() => navigate('/')} src={logo} alt="" />
       <div className={`${pctop.header_right}`}></div>
       <div className={`${pctop.header_login}`}>
-        <div className={`${pctop.header_login_item1}`}>Sign in</div>
+        <div className={`${pctop.header_login_item1}`} onClick={() => navigate("/login")}>Sign in</div>
         {/* 已登陆 */}
         {/* <div className={`${pctop.header_login_item2}`}>0xndjs...iioj</div> */}
       </div>

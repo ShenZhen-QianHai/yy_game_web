@@ -10,7 +10,7 @@ function About() {
   
 
   const handleAssetWorld = () => {
-    navigate('/assetWorld')
+    navigate('/Asset')
     setTabIndex(1)
   }
   const handleHome = () => {
@@ -18,12 +18,12 @@ function About() {
     setTabIndex(0)
   }
 
-  const [tabIndex, setTabIndex] = React.useState(location?.pathname=== "/assetWorld" ?1:0)
+  const [tabIndex, setTabIndex] = React.useState(location?.pathname === "/Asset" ? 1 : 0)
   
 
   return ( 
     <div className={`${pctop.header}`}>
-        <img className={`${pctop.header_logo}`} src={logo} alt="" />
+      <img className={`${pctop.header_logo}`} src={logo} onClick={() => navigate('/')} alt="" />
         <div className={`${pctop.header_right}`}>
             <div className={`${pctop.header_right_item} ${tabIndex === 0 ?pctop.header_right_item_1 : ''}`} onClick={handleHome}>
                 Token world 
