@@ -381,14 +381,210 @@ color: rgba(255, 255, 255, 1);
   .main {
     width: 100%;
     box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    background: none;
   }  
   .main_title {
     display: block;
+    margin-bottom: 0px;
   }
   .main_title_2 {
     padding-top: 10px;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 0px 16px;
   }
   .main_title_3 {
     display: none;
   }
+  .main_title_1{
+    font-size: 16px;
+    line-height: 18px;
+    margin: 16px 0px 0px 16px;
+    border-left: 3px solid rgba(0, 111, 255, 1);
+  }
+  .main_title_line{
+    background: rgba(0, 111, 255, 1);
+  }
+  .main_bart{ 
+  }
+  .main_tab{
+    display: block; 
+    margin-top: 16px;
+  }
+  .main_tab p {
+    margin: 10px 0px 0px 16px;
+  }
+  .main_tab_left{
+    flex: 1;
+    display: flex;
+    margin-left: 16px;
+    align-items: center;
+  }
+  .main_tab_item{
+    font-size: 12px;
+    padding: 8px 6px;
+  }
+  .main_tab_item_img{
+    margin-left: 10px;
+  }
+  .main_box{        
+    width: 336px;
+    display: block;
+    margin: 0px auto;
+    overflow: hidden;
+  }
+  .main_box_item{
+    width: 160px;
+    float: left;
+    margin: 16px 16px 0px 0px;
+  }
+  .main_box_item_top{
+    width: 160px;
+    height: 146px;
+  }
+  .main_box_item_bottom_bg{
+    width: 160px;
+  }
+  .main_box_item_bottom_bg2{
+    width: 160px;
+    background: url("../../images/icon33.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 160px;
+    height: 30px;
+  }
+  .main_box_item:nth-child(2n) {
+    margin-right: 0px; 
+    margin-left: 0px;
+  }
+  .main_box_item_top_index{
+    width: 42px;
+    height: 42px;
+    border-width: 1px;
+    top: 8px;
+    left: 8px;
+  }
+  .main_box_item_top_index h6{
+    font-size: 14px;
+    padding-top: 6px;
+  }
+  .main_box_item_top_index p{
+    font-size: 8px;
+  }
+  .main_box_item_top_img{
+      width: 80px;
+      height: 80px;
+  } 
+  .main_box_item_bottom_item{
+    margin-bottom: 6px;
+  }
+  .main_box_item_bottom_item p{
+    font-size: 11px;
+  }
+  .main_box_item_bottom_item_right{
+    font-size: 11px;
+  }
+  .main_box_item_bottom_item_right img{
+    width: 16px;
+    height: 16px;
+  }
+  .main_box_item_bottom_submit{
+    width: 116px;
+    height: 32px;
+    font-size: 14px;
+    margin: 12px 22px 0px 22px;
+  }
+  .main_box_item_bottom_tips{
+    font-size: 10px; 
+    padding: 15px 0px 15px 0px;
+    background: none
+  }
+
+  .main_modal_title{
+    font-size: 20px;
+    padding: 10px 0px 10px 16px;
+    background-image: none
+  }
+  .main_modal_title img{ 
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .main_modal_content{
+    padding: 10px;
+    display: block;
+  }
+  .main_modal_content_left{ 
+    width: 200px;
+    height: 183px; 
+    margin: 10px auto;
+  }
+  .main_modal_content_left img{ 
+    width: 100px;
+    display: block;
+  }
+  .main_modal_content_right{
+    padding-left: 0px;
+  }
+  .main_modal_content_right_item{
+    width: 220px;
+    height: 55px;
+    padding: 0px 20px;
+    margin: 0px auto 20px auto;
+  }
+  .main_modal_content_right_item_1{
+    width: 200px;
+    font-size: 14px;
+    font-weight: 700; 
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .main_modal_content_right_item_2{
+    font-size: 12px;
+    font-weight: 700; 
+    color: #fff;
+  }
+  .main_modal_content_right_item_3{
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+  } 
+  .main_modal_content_right_buy{
+    width: 204px;
+    height: 56px;
+    line-height: 54px;
+    font-size: 18px;
+    font-weight: 700; 
+    margin: 0 auto;
+    text-align: center; 
+    color: rgba(255, 255, 255, 1);
+    background: url("../../images/icon25.png") no-repeat;
+    background-size: cover; 
+    cursor: pointer;
+  }
+  .main_modal_tips{
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    margin: 20px 20px 0px 20px;
+  }
+  .main_modal_tips_title{
+    font-size: 14px;
+    font-weight: 700; 
+    line-height: 19.36px;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 6px;
+    border-left: 4px solid rgba(0, 111, 255, 1);
+  }
+  .main_modal_tips p{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 16.94px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0px;
+  }
+
 }

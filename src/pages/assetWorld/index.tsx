@@ -122,64 +122,68 @@ function About() {
           </Dropdown>
         </div>
 
-        <div className="Home_tab">
-          <div
-            className={
-              tabIndex === 1
-                ? "Home_tab_item Home_tab_item_on"
-                : "Home_tab_item"
-            }
-            onClick={() => setTabIndex(1)}
-          >
-            Hero space
-          </div>
-          <div
-            className={
-              tabIndex === 2
-                ? "Home_tab_item Home_tab_item_on"
-                : "Home_tab_item"
-            }
-            onClick={() => setTabIndex(2)}
-          >
-            Exchange space
-          </div>
-          <div
-            className={
-              tabIndex === 3
-                ? "Home_tab_item Home_tab_item_on"
-                : "Home_tab_item"
-            }
-            onClick={() => setTabIndex(3)}
-          >
-            Trading center
-          </div>
-          <div
-            className={
-              tabIndex === 4
-                ? "Home_tab_item Home_tab_item_on"
-                : "Home_tab_item"
-            }
-            onClick={() => setTabIndex(4)}
-          >
-            Current holding
+        <div className={`${logincss.main_bart}`}>
+          <div className="Home_tab">
+            <div
+              className={
+                tabIndex === 1
+                  ? "Home_tab_item Home_tab_item_on"
+                  : "Home_tab_item"
+              }
+              onClick={() => setTabIndex(1)}
+            >
+              Hero space
+            </div>
+            <div
+              className={
+                tabIndex === 2
+                  ? "Home_tab_item Home_tab_item_on"
+                  : "Home_tab_item"
+              }
+              onClick={() => setTabIndex(2)}
+            >
+              Exchange space
+            </div>
+            <div
+              className={
+                tabIndex === 3
+                  ? "Home_tab_item Home_tab_item_on Home_tab_item_hidden"
+                  : "Home_tab_item Home_tab_item_hidden"
+              }
+              onClick={() => setTabIndex(3)}
+            >
+              Trading center
+            </div>
+            <div
+              className={
+                tabIndex === 4
+                  ? "Home_tab_item Home_tab_item_on"
+                  : "Home_tab_item"
+              }
+              onClick={() => setTabIndex(4)}
+            >
+              Current holding
+            </div>
           </div>
         </div>
 
         {
           tabIndex === 1 ?
             <div className={`${logincss.main_tab}`}>
-              <Dropdown menu={{ items: items2 }} placement="bottom" arrow trigger={["click"]}>
-                <div className={`${logincss.main_tab_item}`}>
-                  Select region
-                  <img src={icon13} className={`${logincss.main_tab_item_img}`} alt="" />
-                </div>
-              </Dropdown>
-              <Dropdown menu={{ items: items3 }} placement="bottom" arrow trigger={["click"]}>
-                <div className={`${logincss.main_tab_item}`}>
-                  Server Selection
-                  <img src={icon13} className={`${logincss.main_tab_item_img}`} alt="" />
-                </div>
-              </Dropdown>
+              <div className={`${logincss.main_tab_left}`}>
+                <Dropdown menu={{ items: items2 }} placement="bottom" arrow trigger={["click"]}>
+                  <div className={`${logincss.main_tab_item}`}>
+                    Select region
+                    <img src={icon13} className={`${logincss.main_tab_item_img}`} alt="" />
+                  </div>
+                </Dropdown>
+                <Dropdown menu={{ items: items3 }} placement="bottom" arrow trigger={["click"]}>
+                  <div className={`${logincss.main_tab_item}`}>
+                    Server Selection
+                    <img src={icon13} className={`${logincss.main_tab_item_img}`} alt="" />
+                  </div>
+                </Dropdown>
+              </div>
               <p>Opening time: 9 days (July 20,2024)</p>
             </div> : null
         }
@@ -197,6 +201,7 @@ function About() {
             </div>
             <div className={`${logincss.main_box_item_bottom}`}>
               <div className={`${logincss.main_box_item_bottom_bg}`}></div>
+              <div className={`${logincss.main_box_item_bottom_bg2}`}></div>
               <div className={`${logincss.main_box_item_bottom_item}`}>
                 <p>Exchange</p>
                 <div className={`${logincss.main_box_item_bottom_item_right}`}>
@@ -228,6 +233,7 @@ function About() {
             </div>
             <div className={`${logincss.main_box_item_bottom}`}>
               <div className={`${logincss.main_box_item_bottom_bg}`}></div>
+              <div className={`${logincss.main_box_item_bottom_bg2}`}></div>
               <div className={`${logincss.main_box_item_bottom_item}`}>
                 <p>Exchange</p>
                 <div className={`${logincss.main_box_item_bottom_item_right}`}>
@@ -259,6 +265,7 @@ function About() {
             </div>
             <div className={`${logincss.main_box_item_bottom}`}>
               <div className={`${logincss.main_box_item_bottom_bg}`}></div>
+              <div className={`${logincss.main_box_item_bottom_bg2}`}></div>
               <div className={`${logincss.main_box_item_bottom_item}`}>
                 <p>Exchange</p>
                 <div className={`${logincss.main_box_item_bottom_item_right}`}>
@@ -290,6 +297,7 @@ function About() {
             </div>
             <div className={`${logincss.main_box_item_bottom}`}>
               <div className={`${logincss.main_box_item_bottom_bg}`}></div>
+              <div className={`${logincss.main_box_item_bottom_bg2}`}></div>
               <div className={`${logincss.main_box_item_bottom_item}`}>
                 <p>Exchange</p>
                 <div className={`${logincss.main_box_item_bottom_item_right}`}>
@@ -321,6 +329,7 @@ function About() {
             </div>
             <div className={`${logincss.main_box_item_bottom}`}>
               <div className={`${logincss.main_box_item_bottom_bg}`}></div>
+              <div className={`${logincss.main_box_item_bottom_bg2}`}></div>
               <div className={`${logincss.main_box_item_bottom_item}`}>
                 <p>Exchange</p>
                 <div className={`${logincss.main_box_item_bottom_item_right}`}>
@@ -352,6 +361,7 @@ function About() {
             </div>
             <div className={`${logincss.main_box_item_bottom}`}>
               <div className={`${logincss.main_box_item_bottom_bg}`}></div>
+              <div className={`${logincss.main_box_item_bottom_bg2}`}></div>
               <div className={`${logincss.main_box_item_bottom_item}`}>
                 <p>Exchange</p>
                 <div className={`${logincss.main_box_item_bottom_item_right}`}>
@@ -372,7 +382,7 @@ function About() {
                 Redeemable <span>30</span> days after opening
               </div>
             </div>
-          </div>
+          </div> 
 
         </div>
 

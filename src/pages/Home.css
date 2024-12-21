@@ -610,19 +610,23 @@
     height: auto;
     padding: 20px 8px 0px 18px;
     background: none;
+    box-sizing: border-box;
   }
   .Home_tab_item {
     line-height: 40px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 4px;
     background: #fbf5f52e;
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
-                .Home_tab_item {
+  .Home_tab_item {
     margin-right: 10px;
   }
   .Home_tab_item_on {
     background: rgba(0, 111, 255, 1);
+  }
+  .Home_tab_item_hidden{
+    display: none;
   }
   .Home_info {
     margin: 20px 20px 0px 20px;
@@ -649,7 +653,7 @@
   }
   .Home_info_left_item p {
     margin: 0;
-  }
+  } 
   .Home_info_right {
     flex: 1;
     border-radius: 4px;
