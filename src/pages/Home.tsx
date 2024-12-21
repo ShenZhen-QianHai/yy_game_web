@@ -222,8 +222,12 @@ function Home() {
             <div className="Home_main_bg_1">2024-12-31 13:21:32</div>
             <div className="Home_main_bg_2">Extraction</div>
             <div className="Home_main_bg_3">2024-12-31 13:21:32</div>
-            <div className="Home_main_bg_4">Currency exchange</div>
-            <div className="Home_main_bg_5">click to connect</div>
+            <div className="Home_main_bg_4" onClick={() => {
+              setOpen2(true);
+            }}>Currency exchange</div>
+            <div className="Home_main_bg_5" onClick={() => {
+              setOpen2(true);
+            }}>click to connect</div>
             <div className="Home_main_bg_6">Wallet</div>
             <div className="Home_main_bg_7">
               <img src={icon6} alt="" />
@@ -370,8 +374,9 @@ function Home() {
             <img
               src={close}
               className="Home_Proceed_img"
-              alt=""
-              onClick={() => {}}
+              alt="" onClick={() => {
+                setOpen2(false);
+              }}
             />
             <img
               src={icon10}
@@ -412,11 +417,11 @@ function Home() {
             >
               Maximum Transfer Amount
               <Tooltip title="说明说明说明说明说明说明说明说明说明说明说明说明说明">
-                <img
+                <div><img
                   src={icon12}
                   alt=""
                   className="Home_Proceed_select_label_iis"
-                />
+                /></div>
               </Tooltip>
               <div className="Home_Proceed_select_label_flex"></div>
               <img

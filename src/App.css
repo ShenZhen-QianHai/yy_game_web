@@ -25,10 +25,38 @@ button {
   background: rgba(23, 29, 46, 1) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
+
+.ant-dropdown-menu {
+  background: rgba(23, 29, 46, 1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.ant-dropdown-menu-title-content{
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.ant-dropdown-arrow:before{
+  background: rgba(23, 29, 46, 1) !important;
+}
+.ant-select-dropdown{
+  background: linear-gradient(
+    180deg,
+    rgba(24, 79, 140, 1) 0%,
+    rgba(46, 55, 90, 1) 100%
+  ) !important;
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+  background: #181d2d !important;
+}
+.ant-select-item-option-content{
+  color: #fff;
+}
+.ant-select-selection-item{
+  color: #fff!important;
+}
+
 .Home_switching_select .ant-select-arrow {
   color: rgba(255, 255, 255, 0.8) !important;
   margin-top: 2px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
