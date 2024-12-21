@@ -73,6 +73,9 @@ export default defineConfig({
   build: {
     sourcemap: process.env.SOURCE_MAP === 'true',
   },
+  server: {
+    host: '0.0.0.0' // 将 host 设置为 '0.0.0.0' 以允许通过 IP 地址访问
+  },
   plugins: [
     react(),
     VitePWA(pwaOptions),
