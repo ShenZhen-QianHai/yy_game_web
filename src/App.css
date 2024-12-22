@@ -73,4 +73,7 @@ button {
   .ant-select-selector {
     height: 40px !important;
   }
+  .ant-modal{
+    margin: 20px auto !important;
+  }
 }
