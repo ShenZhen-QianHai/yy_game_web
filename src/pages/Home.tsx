@@ -285,7 +285,9 @@ function Home() {
         <div className="Home_switching">
           <div className="Home_switching_title">
             Switching region
-            <img src={close} alt="" onClick={() => {}} />
+            <img src={close} alt="" onClick={() => {
+              setOpen(false);
+            }} />
           </div>
           <div className="Home_switching_tips">
             <h6>Currently bound to the game hall and character</h6>

@@ -59,6 +59,10 @@ button {
   font-size: 16px;
 }
 
+:where(.css-dev-only-do-not-override-1kf000u).ant-modal-root .ant-modal{
+  max-width: calc(100vw - 26px);
+}
+
 @media (max-width: 768px) {
   .App {
     padding-top: 66px;
