@@ -24,8 +24,8 @@ body{
   top: -36px;
 }
 .main_box_item_1{
-  width: 96px;
-  height: 96px;
+  width: 90px;
+  height: 90px;
   display: block;
   margin: 0 auto;
 }
@@ -33,7 +33,7 @@ body{
   width: 118px;
   height: 118px;
   display: block;
-  margin: 0 auto;
+  margin: 0px 0px 0px 90px;
   position: relative;
   z-index: 2;
 }
@@ -60,7 +60,7 @@ body{
   color: rgba(255, 255, 255, 1);
   text-align: center;
   position: absolute;
-  bottom: 8px;
+  bottom: 10px;
   left: 50%;
   transform: translate(-50%,-50%);
   cursor: pointer;
@@ -69,7 +69,7 @@ body{
 .main_box_item1{
   width: 260px;
   position: absolute;   
-  left: 986px;
+  left: 996px;
   top: -36px;
 }
 .main_box_item1 .main_box_item_1{
@@ -77,22 +77,25 @@ body{
   height: 66px;
 }
 .main_box_item1 .main_box_item_2{
-  width: 98px;
-  height: 98px;
+  width: 90px;
+  height: 90px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .main_box_item1 .main_box_item_button{    
   width: 260px;
-  height: 227px;
+  height: 244px;
+  z-index: 2;
 }
 .main_box_item1 .main_box_item_button_1{
-  font-size: 16px;
-  bottom: 0px;
+  font-size: 14px;
+  bottom: 7px;
 }
 .main_box_item_text{
   /* padding: 0px 20px; */
   box-sizing: border-box;
+  z-index: 1;
+  margin-top: -12px;
 }
 .main_box_item_text1{
   background: rgba(0, 0, 0, 0.6);
@@ -137,26 +140,27 @@ body{
 .main_box_item2{ 
   width: 260px;
   position: absolute;
-  left: 718px;
-  top: 248px;
+  left: 758px;
+  top: 242px;
 }
 .main_box_item2 .main_box_item_1{
   width: 66px;
   height: 66px;
 }
 .main_box_item2 .main_box_item_2{
-  width: 98px;
-  height: 98px;
+  width: 90px;
+  height: 90px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .main_box_item2 .main_box_item_button{    
   width: 260px;
-  height: 227px;
-}
+  height: 242px;  
+  z-index: 1;
+}  
 .main_box_item2 .main_box_item_button_1{
-  font-size: 16px;
-  bottom: 0px;
+  font-size: 14px;
+  bottom: 7px;
 }
 .main_box_item3{ 
   width: 260px;
@@ -169,40 +173,43 @@ body{
   height: 66px;
 }
 .main_box_item3 .main_box_item_2{
-  width: 98px;
-  height: 98px;
+  width: 90px;
+  height: 90px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .main_box_item3 .main_box_item_button{    
   width: 260px;
-  height: 227px;
+  height: 242px;
+  z-index: 2;
 }
 .main_box_item3 .main_box_item_button_1{
-  font-size: 16px;
-  bottom: 0px;
+  font-size: 14px;
+  bottom: 7px;
 }
 .main_box_item4{
   width: 260px;
   position: absolute;
-  left: -110px;
-  top: 20px;
+  left: -90px;
+  top: 48px;
 }
 .main_box_item4 .main_box_item_1{
   width: 66px;
   height: 66px;
 }
 .main_box_item4 .main_box_item_2{
-  width: 98px;
-  height: 98px;
+  width: 90px;
+  height: 90px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .main_box_item4 .main_box_item_button{    
   width: 260px;
-  height: 227px;
+  height: 242px;
+  z-index: 2;
 }
 .main_box_item4 .main_box_item_button_1{
-  font-size: 16px;
-  bottom: 0px;
+  font-size: 14px;
+  bottom: 7px;
+  z-index: 1;
 }

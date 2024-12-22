@@ -26,7 +26,7 @@ function About() {
   return (
     <div className={`${logincss.main}`}>
       {/* 背景虚线，替换下面icon背景(icon49开始-icon53结束) */}
-      <div className={`${logincss.main_box}`} style={{ backgroundImage: `url(${icon53})` }}>
+      <div className={`${logincss.main_box}`} style={{ backgroundImage: `url(${icon52})` }}>
         <div className={`${logincss.main_box_item}`}>
           <img src={icon48} className={`${logincss.main_box_item_1}`} />
           <img src={icon6} className={`${logincss.main_box_item_2}`} />
@@ -41,7 +41,7 @@ function About() {
           <img src={icon45} className={`${logincss.main_box_item_2}`} />
           {/* <img src={icon47} className={`${logincss.main_box_item_3}`} /> */}
           <div className={`${logincss.main_box_item_button}`}>
-            <div className={`${logincss.main_box_item_button_1}`}>50 tokens</div>
+            <div className={`${logincss.main_box_item_button_1}`}>5 Thermal value</div>
           </div>
           <div className={`${logincss.main_box_item_text}`}>
             <div className={`${logincss.main_box_item_text1}`}>
@@ -61,7 +61,7 @@ function About() {
           <img src={icon45} className={`${logincss.main_box_item_2}`} />
           {/* <img src={icon47} className={`${logincss.main_box_item_3}`} /> */}
           <div className={`${logincss.main_box_item_button}`}>
-            <div className={`${logincss.main_box_item_button_1}`}>50 tokens</div>
+            <div className={`${logincss.main_box_item_button_1}`}>5 Thermal value</div>
           </div>
           <div className={`${logincss.main_box_item_text}`}>
             <div className={`${logincss.main_box_item_text1}`}>
@@ -81,7 +81,7 @@ function About() {
           <img src={icon45} className={`${logincss.main_box_item_2}`} />
           {/* <img src={icon47} className={`${logincss.main_box_item_3}`} /> */}
           <div className={`${logincss.main_box_item_button}`}>
-            <div className={`${logincss.main_box_item_button_1}`}>50 tokens</div>
+            <div className={`${logincss.main_box_item_button_1}`}>10 Thermal value</div>
           </div>
           <div className={`${logincss.main_box_item_text}`}>
             <div className={`${logincss.main_box_item_text1}`}>
@@ -101,7 +101,7 @@ function About() {
           <img src={icon45} className={`${logincss.main_box_item_2}`} />
           {/* <img src={icon47} className={`${logincss.main_box_item_3}`} /> */}
           <div className={`${logincss.main_box_item_button}`}>
-            <div className={`${logincss.main_box_item_button_1}`}>50 tokens</div>
+            <div className={`${logincss.main_box_item_button_1}`}>15 Thermal value</div>
           </div>
           <div className={`${logincss.main_box_item_text}`}>
             <div className={`${logincss.main_box_item_text1}`}>
